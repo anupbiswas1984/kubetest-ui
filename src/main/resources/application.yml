@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: kubetest-ui
+server:
+  port: 9090
+  
+kubetest:
+  url:
+    one: http://localhost:8081/info
+    two: http://localhost:8082/info
