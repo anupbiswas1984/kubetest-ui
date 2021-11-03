@@ -6,5 +6,5 @@ server:
   
 kubetest:
   url:
-    one: http://localhost:8081/info
-    two: http://localhost:8082/info
+    one: http://kubetestone-cluster.default.svc.cluster.local:8081/info
+    two: http://kubetesttwo-cluster.default.svc.cluster.local:8082/info
