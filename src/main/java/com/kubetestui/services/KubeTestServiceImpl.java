@@ -25,13 +25,13 @@ public class KubeTestServiceImpl implements KubeTestService {
 		try {
 			result1 = template.getForEntity(url1, String.class);
 		} catch (Exception e) {
-			return "KubeTestTwo: => " + "Not Found";
+			return "KubeTestOne: => " + "Not Found";
 		}
 
 		if (!result1.getBody().contains("Not Found")) {
-			return "KubeTestTwo: => " + result1.getBody();
+			return "KubeTestOne: => " + result1.getBody();
 		} else {
-			return "KubeTestTwo: => " + "Not Found";
+			return "KubeTestOne: => " + "Not Found";
 		}
 	}
 
